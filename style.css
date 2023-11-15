@@ -144,17 +144,32 @@ main form label{
     display: block;
 }
 
-main form input{
+main form :is(input, select){
     width: 489px;
     height: 5.5rem;
+    display: block;
 
     background: #FFFFFF;
     border: var(--default-border);
     border-radius: var(--default-border-radius);
 }
 
+
+main form .points{
+    position: relative;
+}
+
 main form input + button{
     position: absolute;
-    right: 0;
+    right: -3.8rem;
+    top: calc(2.7rem + 2.3rem);
+    background-color: transparent;
+    border: none;
+    color: var(--secundary-color);
+    font-size: 2.4rem;
+    cursor: pointer;
 }
+
+
+
 
