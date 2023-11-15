@@ -38,6 +38,7 @@ aside h1{
     font-size: 64px;
     font-weight: 500;
     line-height: 75px;
+    text-align: center;
 }
 
 aside h1 span {
@@ -48,7 +49,7 @@ main{
     width: 60rem;
     height: 52rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.15);
-    padding: 4.4rem 5.7rem;
+    padding: 4.7rem 5.7rem;
     border-radius: 1.2rem;
 }
 
@@ -98,3 +99,23 @@ main footer a{
     display: block;
     color: #000;
 }
+
+@media only screen and (max-width: 768px) {
+    /* Adicione estilos específicos para telas menores aqui */
+    .content {
+        grid-template-areas:
+            ". . ."
+            ". form ."
+            ". . .";
+    }
+
+    main {
+        width: 200%; 
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
